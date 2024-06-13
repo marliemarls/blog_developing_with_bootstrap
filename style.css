@@ -1,66 +1,101 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
-:root{
-    --family-font: 'Figtree' sans-serif;
-}
 
 body{
     display: flex;
     justify-content: center;
-    font-family: var(--family-font);
+    font-family: 'Figtree', sans-serif;
     padding: 150px 0px 50px 0px;
     background-color: hsl(47, 88%, 63%);
 }
 
 div.card{
     display: flex;
-    width: 340px;
+    flex-direction: column;
+    width: 320px;
+    object-fit: contain;
     align-items: center;
     box-shadow: 10px 10px black;
+    border-radius: 5%;
+    border: solid black 1px;
 }
-.learning-tag{
-    background-color: hsl(47, 88%, 63%);
-    width: 74pt;
-    height: 23pt;
-    border: 1pt;
-    border-radius: 5pt;
-    text-align: center;
-    margin: 8px 0px 0px 0px;
+
+div.font-div{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+img.illustration-img {
+    border-radius: 10pt;
+    margin: 0px 0px 0px 0px;
+    padding: 0pt 0pt 0pt 0pt;
+    margin-top: 15px;
+    max-width: 90%;
 }
 
 h2.hoover-color-change{
     font-weight: 800;
     font-style: normal;
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
 }
 h2:hover{
   color:  hsl(47, 88%, 63%);
   cursor: pointer;
 }
-img.illustration-img {
-    border-radius: 10pt;
-    image-rendering:auto;
-    padding: 8pt 8pt 8pt 8pt;
+
+.learning-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+    width: 54pt;
+    height: 20pt;
+    border: 1pt;
+    border-radius: 5pt;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding-top: 1px;
+    font-size: 15px;
+    font-weight: 800;
 }
+
 div.profile-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    margin-right: 65%;
-  }
+    margin-right: 63%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    height: 50px;
+}
+
 .greg-header {
     display: flex;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: 800;
+    margin: 0px 0px 0px 0px;
   }
-img.profile-img {
+
+  img.profile-img {
     display: flex;
-    margin-right: 5pt;
+    margin: 0px 10px 0px 0px;
     width: 32px;
     height: 32px;
   }
-p{
+
+  h5.date{
+    font-size: 12px;
+    margin: 0;
+    padding: 10pt 0pt 10pt 0pt;
+    font-weight: 500;
+  }
+
+  p{
     font-weight: 500;
     color: hsl(0, 0%, 50%);
-    font-style: normal;
+    font-size: 13px;
+    margin: 0;
 }
